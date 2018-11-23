@@ -1,0 +1,12 @@
+﻿<Window x:Class="CurrencyToTexyConverter.Client.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:conversion="clr-namespace:CurrencyToTexyConverter.Client.Wpf.CurrencyToTextConverting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <conversion:CurrencyConvertingView DataContext="{Binding ConvertingViewModel}"></conversion:CurrencyConvertingView>
+    </Grid>
+</Window>
